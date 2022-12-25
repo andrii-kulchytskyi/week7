@@ -45,14 +45,16 @@ export function AddItemForm(props: AddItemFormPropsType) {
                    variant="outlined"
                    value={title}
                    onChange={onChangeHandler}
-                   onKeyPress={onKeyPressHandler}/>
+                   onKeyPress={onKeyPressHandler}
+                   size={"small"}
+        />
 
         <Button size="small" variant="contained" onClick={addItem}
                 style={{
-                    maxWidth: '30px',
-                    maxHeight: '30px',
-                    minWidth: '30px',
-                    minHeight: '30px',
+                    maxWidth: '38px',
+                    maxHeight: '38px',
+                    minWidth: '38px',
+                    minHeight: '38px',
                     background: 'black'
                 }}>+</Button>
 
