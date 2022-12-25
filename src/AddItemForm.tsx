@@ -40,7 +40,8 @@ export function AddItemForm(props: AddItemFormPropsType) {
         {/*/>*/}
         {/*<button onClick={addItem}>+</button>*/}
         <TextField id="outlined-basic"
-                   label="Outlined"
+                   error={!!error}
+                   label={error ? "Title is required..." : "Type your text here..."}
                    variant="outlined"
                    value={title}
                    onChange={onChangeHandler}
